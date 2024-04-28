@@ -28,7 +28,7 @@ Hiện tại, mới chỉ có chức năng Probability Calculator (phần của 
 - Phần data input cho các testcase của chức năng Probability Calculator được đặt trong file `Selenium_Test/bin/Debug/Testcase_Probability.xlsx`. File này đã được cấu hình trong `.gitignore` để không bị bỏ qua, do đó khi clone project về chắc chắn phải có file này.
 - Nếu định code tiếp C# trên nền project hiện tại của mình thì cũng **phải cấu hình `.gitignore` để file data input của các bạn không bị bỏ qua** (tham khảo cách thiết lập của mình nếu cần).
 - Và nhớ, **tạo file data input khác cho các chức năng khác nhau, không viết vào cùng file**. Vì mỗi chức năng có format input và output khác nhau, nên đừng dùng chung file, nó chắc chắn sẽ bị loạn, và cực kỳ khó xử lý đọc file.
-- Nếu các bạn không viết bằng C#, khuyên là tạo một thư mục mới ngoài thư mục gốc (master), đừng thêm trong thư mục `Selenium_Test` để không bị lẫn với những file của C# project.
+- Nếu các bạn không viết bằng C#, khuyên là tạo một thư mục mới ngoài thư mục gốc (master), đừng thêm trong thư mục `Selenium_Test_C#` để không bị lẫn với những file của C# project.
 
 ## Công nghệ sử dụng:
 
