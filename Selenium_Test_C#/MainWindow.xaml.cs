@@ -148,7 +148,7 @@ namespace Selenium_Test
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            List<Testcase> testList = this.loadTestcase(@"Testcase.xlsx");
+            List<Testcase> testList = this.loadTestcase(@"Testcase_Probability.xlsx");
             ChromeDriver chromeDriver = new ChromeDriver();
             for (int testIndex = 0; testIndex < testList.Count; testIndex++)
             {
