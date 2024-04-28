@@ -1,38 +1,38 @@
-# SWTesting_Proj3_Selenium_Test
+# SWTesting Project 3 - Selenium Test
+This is the project for the third major assignment - HK232 Software Testing course.
 
-Đây là project cho bài tập lớn 3 - HK232 môn Kiểm tra phần mềm.
+## Instructions for running the project on Visual Studio for members who want to use C# (or simply want to run the project for reference)
 
-## Hướng dẫn chạy project trên Visual Studio cho các thành viên muốn dùng C# (hoặc đơn giản muốn chạy thử project để tham khảo)
+First of all, since this repo was created by Visual Studio 2019, the root directory will be master instead of main.
 
-Trước hết, do repo này được tạo bởi Visual Studio bản 2019, nên **thư mục gốc sẽ là `master` thay vì `main`**.
+To run the project locally:
 
-Để chạy project trên local, trước tiên clone project với url bằng terminal/powershell như bình thường (đừng sử dụng chức năng clone project của Visual Studio).
+1. Clone the project with the URL using terminal/powershell as usual (do not use Visual Studio's clone project feature).
+2. Open the file `SWTesting_Proj3_Selenium_Test_C_Sharp.sln` (Visual Studio's solution management file). Visual Studio will open automatically.
+3. Install the libraries (note: relatively heavy, recommended to have at least 500MB free in disk):
+  1. In the Visual Studio application, click on the `Selenium_Test_C_Sharp` folder to expand the folder.
+  2. Right-click on `References` -> `Manage NuGet Packages...`.
+  3. At this point, there will be a notification at the top of the newly opened tab saying `Some NuGet packages are missing...`. Click `Restore` to install automatically.
+  4. After installation, you must close Visual Studio and then reopen the file `SWTesting_Proj3_Selenium_Test_C_Sharp.sln`. At this point, the new libraries will be fully loaded and ready to run.
+4. To test, just press `F5`. The project will compile and start automatically.
 
-Sau đó, mở file `SWTesting_Proj3_Selenium_Test_C_Sharp.sln` (file quản lý solution của Visual Studio). Visual Studio sẽ tự mở.
+## Testing implementation description
 
-Tiếp theo là cài thư viện (lưu ý: tương đối nặng, khuyên nên có sẵn ít nhất 500MB trống):
-- Trong ứng dụng Visual Studio, nhấp vào thư mục `Selenium_Test_C_Sharp` để xổ thư mục xuống.
-- Nhấn phải chuột vào `References` -> `Manage NuGet Packages...`
-- Khi này, trên đầu tab vửa mở ra sẽ có thông báo dạng "Some NuGet packages are missing...". Nhấn `Restore` để cài đặt tự động.
-- Sau khi cài đặt xong, **phải tắt Visual Studio** rồi mở lại file `SWTesting_Proj3_Selenium_Test_C_Sharp.sln`. Khi này, các thư viện mới được nạp đủ và mới chạy được.
-- Để chạy thử, cứ nhấn F5. Project sẽ tự biên dịch và khởi chạy.
+Note: Please **ENSURE** to update this section if there are changes in the future.
 
-Hiện tại, mới chỉ có chức năng Probability Calculator (phần của Nghĩa) được hiện thực. Nên các phần sau đây chỉ đúng với project hiện tại. **Vui lòng PHẢI cập nhật phần này nếu có thay đổi trong tương lai**:
-- Khi project khởi chạy xong sẽ xuất hiện một cửa sổ terminal, và một cái cửa sổ UI đơn giản với dòng chữ: "Start Probability Calculator Test".
-- Cứ nhấn vào đó (tuỳ cấu hình máy mà tốc độ nhanh chậm) nó sẽ bắt đầu tự động mở Chrome và chạy tự động các testcase của chức năng Probability Calculator.
-- Sau khi xong hết, của sổ Chrome sẽ tự tắt. Sau đó các bạn tắt hết luôn các cửa sổ xuất hiện do khởi chạy code.
-- Khi này, trong phần Output của Visual Studio, `Show output from: Debug` sẽ có các dòng `Testcase ...: PASS` (nên là PASS :>, nó mà FAIL thì chịu).
+### C#
+1. When the project finishes loading, a terminal window and a simple UI window with the text `Start Probability Calculator Test` will appear.
+2. Simply click on it (the speed may vary depending on your machine) and it will automatically start opening `Chrome` and running the test cases of the `Probability Calculator` feature.
+3. After finishing, the `Chrome` window will close automatically. Then close all windows that appear from running the code.
+4. At this point, in the Visual Studio `Output` section, `Show output from: Debug` will display lines like `Testcase ...: PASS`.
 
-## Một số lưu ý về project (phải đọc):
+## Some notes about the project (MUST READ):
+* The data input for the test cases of the `Probability Calculator` feature is placed in the file `Selenium_Test/bin/Debug/Testcase_Probability.xlsx`. This file has been configured in `.gitignore` to avoid being ignored, so when cloning the project, make sure to have this file.
+* If you intend to continue coding in C# on your current project base, you also must configure `.gitignore` to avoid ignoring your data input file (refer to my setup if needed).
+* Create separate data input files for different features, do not write to the same file. Because each feature has different input and output formats, so don't use the same file, it will surely be chaotic and extremely difficult to handle reading the file.
+* If you don't use C#, create a new directory named `Selenium_Test_<Language>` and place your tests there.
 
-- Phần data input cho các testcase của chức năng Probability Calculator được đặt trong file `Selenium_Test/bin/Debug/Testcase_Probability.xlsx`. File này đã được cấu hình trong `.gitignore` để không bị bỏ qua, do đó khi clone project về chắc chắn phải có file này.
-- Nếu định code tiếp C# trên nền project hiện tại của mình thì cũng **phải cấu hình `.gitignore` để file data input của các bạn không bị bỏ qua** (tham khảo cách thiết lập của mình nếu cần).
-- Và nhớ, **tạo file data input khác cho các chức năng khác nhau, không viết vào cùng file**. Vì mỗi chức năng có format input và output khác nhau, nên đừng dùng chung file, nó chắc chắn sẽ bị loạn, và cực kỳ khó xử lý đọc file.
-- Nếu các bạn không viết bằng C#, khuyên là tạo một thư mục mới ngoài thư mục gốc (master), đừng thêm trong thư mục `Selenium_Test_C#` để không bị lẫn với những file của C# project.
-
-## Công nghệ sử dụng:
-
-- Selenium WebDriver
-- Selenium.Chrome.WebDriver
-- C# - WPF App (.NET Framework)
-- ...
+## Technologies used
+* Selenium WebDriver
+* Selenium.Chrome.WebDriver
+* C# - WPF App (.NET Framework)
