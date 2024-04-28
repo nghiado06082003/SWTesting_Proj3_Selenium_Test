@@ -184,5 +184,20 @@ namespace Selenium_Test
             }
             chromeDriver.Close();
         }
+
+        private void Age_Cal_Decision_Table_Click(object sender, RoutedEventArgs e)
+        {
+            AgeCalDecisionTable ageCalDecisionTable = new AgeCalDecisionTable();
+            List<Testcase> testList = this.loadTestcase(@"Testcase_Age_Calculator.xlsx");
+            ChromeDriver chromeDriver = new ChromeDriver();
+            for (int testIndex = 0; testIndex < testList.Count; testIndex++)
+            {
+                //todo
+                chromeDriver.Url = "https://www.calculator.net/age-calculator.html";
+                chromeDriver.Navigate();
+                Thread.Sleep(100);
+            }
+            chromeDriver.Close();
+        }
     }
 }

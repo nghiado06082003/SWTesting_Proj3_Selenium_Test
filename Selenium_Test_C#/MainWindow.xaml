@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-		<Button Content="Start Probability Calculator Test" Click="Button_Click"></Button>    
-	</Grid>
+		<Button Content="Start Probability Calculator Test" Click="Button_Click" Margin="400,10,10,345"></Button>
+        <Button Content="Start Age Calculator Decision Table Test" Click="Age_Cal_Decision_Table_Click" Margin="10,10,420,345"></Button>
+    </Grid>
 </Window>
