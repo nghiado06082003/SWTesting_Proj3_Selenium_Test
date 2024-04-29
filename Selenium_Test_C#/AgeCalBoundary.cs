@@ -15,7 +15,7 @@ using System.IO.Packaging;
 
 namespace Selenium_Test
 {
-    internal class AgeCalDecisionTable
+    internal class AgeCalBoundary
     {
         public struct Input
         {
@@ -103,7 +103,7 @@ namespace Selenium_Test
         }
         public void DoTest()
         {
-            List<Testcase> testList = this.loadTestcase(@"Testcase_Age_Calculator_Decision_Table.xlsx");
+            List<Testcase> testList = this.loadTestcase(@"Testcase_Age_Calculator_Boundary.xlsx");
             ChromeDriver chromeDriver = new ChromeDriver();
             for (int testIndex = 0; testIndex < testList.Count; testIndex++)
             {
