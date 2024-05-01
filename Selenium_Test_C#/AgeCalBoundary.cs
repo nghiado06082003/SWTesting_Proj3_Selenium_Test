@@ -49,15 +49,10 @@ namespace Selenium_Test
                 this.input = input;
                 this.output = output;
             }
-            //public void print()
-            //{
-            //    Console.WriteLine(this.input.pA);
-            //    Console.WriteLine(this.input.pB);
-            //    Console.WriteLine(this.output.not_A);
-            //}
+
         }
 
-        public List<Testcase> loadTestcase(string pathname)
+        private List<Testcase> LoadTestcase(string pathname)
         {
             WorkBook workBook = WorkBook.Load(pathname);
             WorkSheet workSheet = workBook.WorkSheets.First();
@@ -78,36 +73,29 @@ namespace Selenium_Test
             }
             return testList;
         }
-        public bool testException(ChromeDriver chromeDriver, string excpt)
+        private bool TestException(ChromeDriver chromeDriver, string excpt)
         {
             var message = chromeDriver.FindElement(By.CssSelector("font"));
             return message.Text == excpt;
         }
 
-        public bool testNormal(ChromeDriver chromeDriver, Testcase testcase)
+        private bool TestNormal(ChromeDriver chromeDriver, Testcase testcase)
         {
-            //var resultTable = chromeDriver.FindElement(By.ClassName("cinfoT"));
             IReadOnlyList<IWebElement> rows = chromeDriver.FindElements(By.CssSelector(".verybigtext"));
             string[] expected_result = {
                 testcase.output.result
             };
-            //for (int rowIndex = 0; rowIndex < rows.Count; rowIndex++)
-            //{
-            //    IReadOnlyList<IWebElement> datas = rows[rowIndex].FindElements(By.TagName("td"));
-            //    var data = datas[1].Text;
-            //    if (data != expected_result[rowIndex]) return false;
-            //}
+
             var data = rows[0].Text.Trim().Replace("\r", "").Replace("\n", ""); ;
             if (data != expected_result[0]) return false;
             return true;
         }
         public void DoTest()
         {
-            List<Testcase> testList = this.loadTestcase(@"Testcase_Age_Calculator_Boundary.xlsx");
+            List<Testcase> testList = this.LoadTestcase(@"Testcase_Age_Calculator_Boundary.xlsx");
             ChromeDriver chromeDriver = new ChromeDriver();
             for (int testIndex = 0; testIndex < testList.Count; testIndex++)
             {
-                //todo
                 chromeDriver.Url = "https://www.calculator.net/age-calculator.html";
                 chromeDriver.Navigate();
                 var m1 = chromeDriver.FindElement(By.Id("today_Month_ID"));
@@ -150,14 +138,14 @@ namespace Selenium_Test
 
                 if (Regex.IsMatch(testList[testIndex].output.result, @"Date", RegexOptions.IgnoreCase) == false) //Mean not error testcase
                 {
-                    if (this.testNormal(chromeDriver, testList[testIndex]))
+                    if (this.TestNormal(chromeDriver, testList[testIndex]))
                         Console.WriteLine("Test case {0}: PASS", testIndex + 1);
                     else
                         Console.WriteLine("Test case {0}: FAIL", testIndex + 1);
                 }
                 else
                 {
-                    if (this.testException(chromeDriver, testList[testIndex].output.result))
+                    if (this.TestException(chromeDriver, testList[testIndex].output.result))
                         Console.WriteLine("Test case {0}: PASS", testIndex + 1);
                     else
                         Console.WriteLine("Test case {0}: FAIL", testIndex + 1);
