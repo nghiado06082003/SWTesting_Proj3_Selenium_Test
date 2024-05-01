@@ -1,7 +1,7 @@
 mod test_suites;
 use std::error::Error;
 use Selenium_Test_Rust::{driver_port::get_driver_port, caps::get_caps};
-use crate::test_suites::test_GPA_calculator::test_gpa_calculator;
+use crate::test_suites::test_gpa_calculator::test_gpa_calculator;
 use thirtyfour::prelude::*;
 
 #[tokio::main]
