@@ -1,7 +1,6 @@
 use thirtyfour::prelude::*;
 use std::error::Error;
-
-static URL: &'static str = "https://www.calculator.net/gpa-calculator.html";
+use Selenium_Test_Rust::gpa_site::visit_and_reset;
 
 pub async fn test_GPA_calculator(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test GPA calculator suite is running");
@@ -14,25 +13,25 @@ pub async fn test_GPA_calculator(driver: &WebDriver) -> Result<(), Box<dyn Error
 
 pub async fn test1(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test1 is running!");
-    driver.goto(URL).await?;
+    visit_and_reset(driver).await?;
     Ok(())
 }
 
 pub async fn test2(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test2 is running!");
-    driver.goto(URL).await?;
+    visit_and_reset(driver).await?;
     Ok(())
 }
 
 pub async fn test3(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test3 is running!");
-    driver.goto(URL).await?;
+    visit_and_reset(driver).await?;
     Ok(())
 }
 
 pub async fn test4(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test4 is running!");
-    driver.goto(URL).await?;
+    visit_and_reset(driver).await?;
     Ok(())
 }
 
