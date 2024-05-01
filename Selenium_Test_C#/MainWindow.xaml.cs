@@ -196,5 +196,11 @@ namespace Selenium_Test
             AgeCalBoundary ageCalBoundary = new AgeCalBoundary();
             ageCalBoundary.DoTest();
         }
+
+        private void Grade_Cal_Boundary_Click(object sender, RoutedEventArgs e)
+        {
+            GradeCalDecisionTable gradeCalDecisionTable = new GradeCalDecisionTable();
+            gradeCalDecisionTable.DoTest();
+        }
     }
 }
