@@ -1,1 +1,1 @@
-pub mod test_GPA_calculator;
+pub mod test_gpa_calculator;
