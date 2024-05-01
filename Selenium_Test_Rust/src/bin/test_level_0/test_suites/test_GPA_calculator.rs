@@ -34,6 +34,5 @@ pub async fn test4(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync
     println!("Test4 is running!");
     driver.goto(URL).await?;
     Ok(())
-    
 }
 
