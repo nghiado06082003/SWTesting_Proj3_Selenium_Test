@@ -33,6 +33,12 @@ pub async fn click_clear(driver: &WebDriver) -> Result<(), Box<dyn Error + Send 
     Ok(())
 }
 
+pub async fn click_calculate(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
+    let calculate_button = driver.find(By::Css("input[type='submit'][name='x'][value='Calculate']")).await?;
+    calculate_button.click().await?;
+    Ok(())
+}
+
 pub async fn reset(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     click_clear(driver).await?;
     for i in 1..=3 {
