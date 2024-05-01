@@ -30,9 +30,15 @@ Note: Please **ENSURE** to update this section if there are changes in the futur
 ### Rust
 
 1. `cd` to `Selenium_Test_Rust`.
-2. To run test level 0, run `cargo run --bin test_level_0`.
-3. To run test level 1, run `cargo run --bin test_level_1`.
-4. To run test level 2, run `cargo run --bin test_level_2`.
+2. Make sure that the browser driver is running at a known port.
+3. Specify the correct browser name and if it's not running on the default port, specify the correct port.
+
+   The supported browsers are:
+   * `"chrome"`: default to `9515`.
+   * `"firefox"`: default to `4444`.
+5. To run test level 0, run `cargo run --bin test_level_0`.
+6. To run test level 1, run `cargo run --bin test_level_1`.
+7. To run test level 2, run `cargo run --bin test_level_2`.
 
 ## Some notes about the project (MUST READ):
 
