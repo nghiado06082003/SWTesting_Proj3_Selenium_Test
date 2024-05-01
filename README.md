@@ -26,6 +26,10 @@ Note: Please **ENSURE** to update this section if there are changes in the futur
 3. After finishing, the `Chrome` window will close automatically. Then close all windows that appear from running the code.
 4. At this point, in the Visual Studio `Output` section, `Show output from: Debug` will display lines like `Testcase ...: PASS`.
 
+### Rust
+1. Make sure Selenenium server is running on port `4444`: `java -jar selenium-server-4.20.0.jar standalone`
+2. `cd` to `Selenium_Test_Rust`.
+
 ## Some notes about the project (MUST READ):
 * The data input for the test cases of the `Probability Calculator` feature is placed in the file `Selenium_Test/bin/Debug/Testcase_Probability.xlsx`. This file has been configured in `.gitignore` to avoid being ignored, so when cloning the project, make sure to have this file.
 * If you intend to continue coding in C# on your current project base, you also must configure `.gitignore` to avoid ignoring your data input file (refer to my setup if needed).
