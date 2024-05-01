@@ -117,8 +117,8 @@ namespace Selenium_Test
                 for (int inputIndex = 0; inputIndex < testcase.input.Count; inputIndex++)
                 {
                     var name = chromeDriver.FindElement(By.Name($"d{inputIndex + 1}"));
-                    var grade = chromeDriver.FindElement(By.Id($"s{inputIndex + 1}"));
-                    var weight = chromeDriver.FindElement(By.Id($"w{inputIndex + 1}"));
+                    var grade = chromeDriver.FindElement(By.Name($"s{inputIndex + 1}"));
+                    var weight = chromeDriver.FindElement(By.Name($"w{inputIndex + 1}"));
                     var selector = new SelectElement(name);
                     selector.SelectByText(testList[testIndex].input[inputIndex].name);
                     Thread.Sleep(100);
