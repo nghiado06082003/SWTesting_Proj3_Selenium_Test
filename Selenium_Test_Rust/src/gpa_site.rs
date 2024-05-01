@@ -1,3 +1,4 @@
+use core::time::Duration;
 use thirtyfour::prelude::*;
 use std::error::Error;
 
@@ -68,7 +69,9 @@ pub async fn visit(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync
 
 pub async fn visit_and_reset(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     visit(driver).await?;
+    tokio::time::sleep(Duration::new(1, 0)).await;
     reset(driver).await?;
     Ok(())
 }
+
 
