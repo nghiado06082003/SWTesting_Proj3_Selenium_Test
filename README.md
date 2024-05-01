@@ -21,21 +21,29 @@ To run the project locally:
 Note: Please **ENSURE** to update this section if there are changes in the future.
 
 ### C#
+
 1. When the project finishes loading, a terminal window and a simple UI window with the text `Start Probability Calculator Test` will appear.
 2. Simply click on it (the speed may vary depending on your machine) and it will automatically start opening `Chrome` and running the test cases of the `Probability Calculator` feature.
 3. After finishing, the `Chrome` window will close automatically. Then close all windows that appear from running the code.
 4. At this point, in the Visual Studio `Output` section, `Show output from: Debug` will display lines like `Testcase ...: PASS`.
 
 ### Rust
+
 1. `cd` to `Selenium_Test_Rust`.
+2. To run test level 0, run `cargo run --bin test_level_0`.
+3. To run test level 1, run `cargo run --bin test_level_1`.
+4. To run test level 2, run `cargo run --bin test_level_2`.
 
 ## Some notes about the project (MUST READ):
+
 * The data input for the test cases of the `Probability Calculator` feature is placed in the file `Selenium_Test/bin/Debug/Testcase_Probability.xlsx`. This file has been configured in `.gitignore` to avoid being ignored, so when cloning the project, make sure to have this file.
 * If you intend to continue coding in C# on your current project base, you also must configure `.gitignore` to avoid ignoring your data input file (refer to my setup if needed).
 * Create separate data input files for different features, do not write to the same file. Because each feature has different input and output formats, so don't use the same file, it will surely be chaotic and extremely difficult to handle reading the file.
 * If you don't use C#, create a new directory named `Selenium_Test_<Language>` and place your tests there.
 
 ## Technologies used
+
 * Selenium WebDriver
 * Selenium.Chrome.WebDriver
 * C# - WPF App (.NET Framework)
+* Rust - `thirtyfour` crate
