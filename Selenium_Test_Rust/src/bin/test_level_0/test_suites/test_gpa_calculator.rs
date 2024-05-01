@@ -65,7 +65,6 @@ pub async fn test3(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync
     tokio::time::sleep(Duration::new(1, 0)).await;
     let errors = get_error_messages(driver).await?;
     assert_eq!(errors, vec!["Please provide a valid credit for item #1.", "Please provide a valid grade for item #1."]);
-    change_course_name(driver, 1, "Math").await?;
     println!("Test3 passed!");
     tokio::time::sleep(Duration::new(1, 0)).await;
     Ok(())
@@ -85,7 +84,6 @@ pub async fn test4(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync
     tokio::time::sleep(Duration::new(1, 0)).await;
     let errors = get_error_messages(driver).await?;
     assert_eq!(errors, vec!["Please provide a valid grade for item #1."]);
-    change_course_name(driver, 1, "Math").await?;
     println!("Test4 passed!");
     tokio::time::sleep(Duration::new(1, 0)).await;
     Ok(())
