@@ -1,6 +1,6 @@
 use thirtyfour::prelude::*;
 use std::error::Error;
-use Selenium_Test_Rust::gpa_site::visit_and_reset;
+use Selenium_Test_Rust::gpa_site::*;
 
 pub async fn test_gpa_calculator(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test GPA calculator suite is running");
@@ -14,6 +14,13 @@ pub async fn test_gpa_calculator(driver: &WebDriver) -> Result<(), Box<dyn Error
 pub async fn test1(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test1 is running!");
     visit_and_reset(driver).await?;
+    change_course_name(driver, 1, "Math").await?;
+    change_credits(driver, 1, -1).await?;
+    change_grade(driver, 1, "C").await?;
+    click_calculate(driver).await?;
+    let errors = get_error_messages(driver).await?;
+    assert_eq!(errors, vec!["Please provide a valid credit for item #1."]);
+    println!("Test1 passed!");
     Ok(())
 }
 
