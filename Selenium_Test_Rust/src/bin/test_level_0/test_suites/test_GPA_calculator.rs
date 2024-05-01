@@ -2,7 +2,7 @@ use thirtyfour::prelude::*;
 use std::error::Error;
 use Selenium_Test_Rust::gpa_site::visit_and_reset;
 
-pub async fn test_GPA_calculator(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
+pub async fn test_gpa_calculator(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     println!("Test GPA calculator suite is running");
     test1(driver).await?;
     test2(driver).await?;
