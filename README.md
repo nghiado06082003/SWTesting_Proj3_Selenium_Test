@@ -27,7 +27,7 @@ Note: Please **ENSURE** to update this section if there are changes in the futur
 4. At this point, in the Visual Studio `Output` section, `Show output from: Debug` will display lines like `Testcase ...: PASS`.
 
 ### Rust
-1. Make sure Selenenium server is running on port `4444`: `java -jar selenium-server-4.20.0.jar standalone`
+1. Make sure Selenium server is running on port `4444`: `java -jar selenium-server-4.20.0.jar standalone`
 2. `cd` to `Selenium_Test_Rust`.
 
 ## Some notes about the project (MUST READ):
