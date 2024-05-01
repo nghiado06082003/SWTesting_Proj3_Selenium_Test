@@ -27,12 +27,28 @@ pub async fn change_grade(driver: &WebDriver, index: usize, grade: &str) -> Resu
     Ok(())
 }
 
-pub async fn visit_and_reset(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
-    driver.goto(URL).await?;
+pub async fn click_clear(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     let clear_button = driver.find(By::Css("input[type='button'][value='Clear']")).await?;
     clear_button.click().await?;
+    Ok(())
+}
+
+pub async fn reset(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
+    click_clear(driver).await?;
     for i in 1..=3 {
         change_grade(driver, i, "-").await?;            
     }
     Ok(())
 }
+
+pub async fn visit(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
+    driver.goto(URL).await?;
+    Ok(())
+}
+
+pub async fn visit_and_reset(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
+    visit(driver).await?;
+    reset(driver).await?;
+    Ok(())
+}
+
