@@ -39,6 +39,15 @@ pub async fn click_calculate(driver: &WebDriver) -> Result<(), Box<dyn Error + S
     Ok(())
 }
 
+pub async fn get_error_messages(driver: &WebDriver) -> Result<Vec<String>, Box<dyn Error + Send + Sync>> {
+    let error_message_fonts = driver.find_all(By::Css("font[color='red']")).await?;
+    let mut error_messages = vec![];
+    for error in error_message_fonts {
+        error_messages.push(error.text().await?);
+    }
+    Ok(error_messages)
+}
+
 pub async fn reset(driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
     click_clear(driver).await?;
     for i in 1..=3 {
