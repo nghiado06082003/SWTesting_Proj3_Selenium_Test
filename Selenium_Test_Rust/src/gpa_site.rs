@@ -39,6 +39,11 @@ pub async fn click_calculate(driver: &WebDriver) -> Result<(), Box<dyn Error + S
     Ok(())
 }
 
+pub async fn get_result(driver: &WebDriver) -> Result<usize, Box<dyn Error + Send + Sync>> {
+    let gpa_text = driver.find(By::Css("p.verybigtext > b")).await?.text().await?;
+    Ok(gpa_text[5..].parse().expect("Unable to parse GPA string"))
+}
+
 pub async fn get_error_messages(driver: &WebDriver) -> Result<Vec<String>, Box<dyn Error + Send + Sync>> {
     let error_message_fonts = driver.find_all(By::Css("font[color='red']")).await?;
     let mut error_messages = vec![];
