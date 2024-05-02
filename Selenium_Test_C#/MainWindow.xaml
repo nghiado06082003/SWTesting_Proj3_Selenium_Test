@@ -10,7 +10,7 @@
 		<Button Content="Start Probability Calculator Test" Click="Button_Click" Margin="400,10,10,345"></Button>
         <Button Content="Start Age Calculator Decision Table Test" Click="Age_Cal_Decision_Table_Click" Margin="10,10,420,345"></Button>
 		<Button Content="Start Age Calculator Boundary Test" Click="Age_Cal_Boundary_Click" Margin="10,106,420,251"></Button>
-		<Button Content="Start Grade Calculator Boundary Test" Click="Grade_Cal_Boundary_Click" Margin="10,204,420,153"></Button>
+		<Button Content="Start Grade Calculator Deision Table Test" Click="Grade_Cal_Boundary_Click" Margin="400,106,10.333,250.667"></Button>
 
 	</Grid>
 </Window>

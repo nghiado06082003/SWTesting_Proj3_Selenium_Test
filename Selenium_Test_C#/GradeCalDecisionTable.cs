@@ -45,6 +45,12 @@ namespace Selenium_Test
             {
                 this.input = input;
                 this.output = output;
+
+            }
+            public void print()
+            {
+                for (int i = 0; i < this.input.Count; i++) Console.WriteLine(this.input[i]);
+                for (int i = 0; i < this.output.Count; i++) Console.WriteLine(this.output[i]);
             }
         }
         public List<Testcase> loadTestcase(string pathname)
@@ -53,8 +59,9 @@ namespace Selenium_Test
             WorkSheet workSheet = workBook.WorkSheets.First();
             int testnum = 1;
             int i = 1;
+            Cell cell = workSheet[$"B{i}"].First();
             List<Testcase> testList = new List<Testcase>();
-            while (workSheet[$"B{i}"].First().StringValue != "")
+            while (cell.StringValue != "")
             {
                 List<Input> inputs = new List<Input>();
                 do
@@ -64,12 +71,12 @@ namespace Selenium_Test
                     inputs.Add(input);
                     i++;
                 }
-                while (workSheet[$"A{i}"].First().StringValue != "");
-                List<string> outputs = workSheet[$"E{i}:G{i}"].Where(x => x.StringValue != "")
-                .Select(x => x.StringValue).ToList();
+                while (workSheet[$"A{i-1}"].First().StringValue == "");
+                List<string> outputs = workSheet[$"E{i - 1}:G{i - 1}"].Where(x => x.StringValue != "").Select(x => x.StringValue).ToList();
                 Testcase testcase = new Testcase(inputs, outputs);
                 testList.Add(testcase);
                 testnum++;
+                cell = workSheet[$"B{i}"].First();
             }
 
             return testList;
@@ -94,14 +101,24 @@ namespace Selenium_Test
         public bool testException(ChromeDriver chromeDriver, Testcase testcase)
         {
             //var resultTable = chromeDriver.FindElement(By.ClassName("cinfoT"));
-            for(int i = 0; i < testcase.output.Count; i++)
+            if (Regex.IsMatch(testcase.output[0], @"Please provide positive weight for the Assignments/Exams", RegexOptions.IgnoreCase) == true)
             {
-                IReadOnlyList<IWebElement> rows = chromeDriver.FindElements(By.CssSelector($"p:nth-child({i+4})>font)"));
-                string exp_result = testcase.output[i];
+                IReadOnlyList<IWebElement> rows = chromeDriver.FindElements(By.CssSelector($"p:nth-child(5)"));
+                string exp_result = testcase.output[0];
                 var data = rows[0].Text.Trim().Replace("\r", "").Replace("\n", "");
                 if (data != exp_result) return false;
             }
-           
+            else
+            {
+                for (int i = 0; i < testcase.output.Count; i++)
+                {
+                    IReadOnlyList<IWebElement> rows = chromeDriver.FindElements(By.CssSelector($"div:nth-child({i + 4})>font)"));
+                    string exp_result = testcase.output[i];
+                    var data = rows[0].Text.Trim().Replace("\r", "").Replace("\n", "");
+                    if (data != exp_result) return false;
+                }
+            }
+
             return true;
         }
         public void DoTest()
@@ -117,22 +134,22 @@ namespace Selenium_Test
                 for (int inputIndex = 0; inputIndex < testcase.input.Count; inputIndex++)
                 {
                     var name = chromeDriver.FindElement(By.Name($"d{inputIndex + 1}"));
+                    name.Clear();
+                    Thread.Sleep(100);
+                    name.SendKeys(testList[testIndex].input[inputIndex].name);
                     var grade = chromeDriver.FindElement(By.Name($"s{inputIndex + 1}"));
+                    grade.Clear();
+                    Thread.Sleep(100);
+                    grade.SendKeys(testList[testIndex].input[inputIndex].grade);
                     var weight = chromeDriver.FindElement(By.Name($"w{inputIndex + 1}"));
-                    var selector = new SelectElement(name);
-                    selector.SelectByText(testList[testIndex].input[inputIndex].name);
+                    weight.Clear();
                     Thread.Sleep(100);
-                    selector = new SelectElement(grade);
-                    selector.SelectByText(testList[testIndex].input[inputIndex].grade);
-                    Thread.Sleep(100);
-                    selector = new SelectElement(weight);
-                    selector.SelectByText(testList[testIndex].input[inputIndex].weight);
-                    Thread.Sleep(100);
+                    weight.SendKeys(testList[testIndex].input[inputIndex].weight);
                 }
                 var calButton = chromeDriver.FindElement(By.Name("x"));
                 calButton.Click();
                 Thread.Sleep(100);
-                if (Regex.IsMatch(testList[testIndex].output[0], @"Average Grade", RegexOptions.IgnoreCase) == false) //Mean not error testcase
+                if (Regex.IsMatch(testList[testIndex].output[0], @"Average Grade", RegexOptions.IgnoreCase) == true) //Mean not error testcase
                 {
                     if (this.testNormal(chromeDriver, testList[testIndex]))
                         Console.WriteLine("Test case {0}: PASS", testIndex + 1);
