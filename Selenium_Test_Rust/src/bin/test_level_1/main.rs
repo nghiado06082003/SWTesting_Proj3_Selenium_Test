@@ -1,7 +1,8 @@
+mod test_helpers;
+
 use std::error::Error;
 use Selenium_Test_Rust::{driver_port::get_driver_port, caps::get_caps};
 use thirtyfour::prelude::*;
-
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
