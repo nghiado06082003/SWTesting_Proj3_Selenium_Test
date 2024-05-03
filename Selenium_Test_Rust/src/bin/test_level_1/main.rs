@@ -70,6 +70,10 @@ async fn run_test_case(web_driver: &WebDriver, testcase: TestCase) -> Result<(),
             let errors = get_error_messages(web_driver).await?;
             assert_eq!(errors, expected_errors);
         }
+        Output::ZeroCredit(expected_res) => {
+            let res = get_result_when_zero_credit(web_driver).await?;
+            assert_eq!(res, expected_res);
+        }
     }
     tokio::time::sleep(Duration::new(1, 0)).await;
     Ok(())

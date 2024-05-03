@@ -55,6 +55,7 @@ pub struct Input {
 pub enum Output {
     Error(Vec<String>),
     Ok(usize),
+    ZeroCredit(usize),
 }
 
 #[derive(Debug)]
