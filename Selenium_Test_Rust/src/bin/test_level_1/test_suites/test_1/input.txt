@@ -1,0 +1,5 @@
+{
+  "course_name": "Math",
+  "grade": "C",
+  "credits": -1
+}

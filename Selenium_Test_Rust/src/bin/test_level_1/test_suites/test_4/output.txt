@@ -1,0 +1,6 @@
+{
+  "type": "Error",
+  "value": [
+    "Please provide a valid grade for item #1."
+  ]
+}
