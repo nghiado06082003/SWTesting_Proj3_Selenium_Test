@@ -21,7 +21,7 @@ async fn test_runner(web_driver: &WebDriver) {
     let test_root_dir = String::from(Path::new(&env::current_dir().unwrap()).join("src").join("bin").join("test_level_1").join("test_suites").to_str().unwrap());
     let mut testcase_stream = read_test_suites(test_root_dir).boxed();
     
-    while let testcase = testcase_stream.next().await {
-          
+    while let Some(testcase) = testcase_stream.next().await {
+        println!("Running testcase {testcase:?}");
     }
 }
