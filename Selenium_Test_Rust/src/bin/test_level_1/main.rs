@@ -3,7 +3,7 @@ mod test_helpers;
 use std::{env, error::Error, path::Path, time::Duration};
 use futures::StreamExt;
 use test_helpers::{read_test_suites, Output, TestCase};
-use Selenium_Test_Rust::{caps::get_caps, driver_port::get_driver_port, gpa_site::{change_course_name, change_credits, change_grade, click_calculate, get_error_messages, get_result, visit_and_reset}};
+use Selenium_Test_Rust::{caps::get_caps, driver_port::get_driver_port, gpa_site::{change_course_name, change_credits, change_grade, click_calculate, get_error_messages, get_result, get_result_when_zero_credit, visit_and_reset}};
 use thirtyfour::prelude::*;
 
 #[tokio::main]

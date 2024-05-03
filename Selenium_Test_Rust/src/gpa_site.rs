@@ -45,6 +45,11 @@ pub async fn get_result(driver: &WebDriver) -> Result<usize, Box<dyn Error + Sen
     Ok(gpa_text[5..].parse().expect("Unable to parse GPA string"))
 }
 
+pub async fn get_result_when_zero_credit(driver: &WebDriver) -> Result<usize, Box<dyn Error + Send + Sync>> {
+    let gpa_text = driver.find(By::Css("h2.h2result + p")).await?.text().await?;
+    Ok(gpa_text[15..].parse().expect("Unable to parse credit res string"))
+}
+
 pub async fn get_error_messages(driver: &WebDriver) -> Result<Vec<String>, Box<dyn Error + Send + Sync>> {
     let error_message_fonts = driver.find_all(By::Css("font[color='red']")).await?;
     let mut error_messages = vec![];
