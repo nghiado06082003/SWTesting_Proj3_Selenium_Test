@@ -4,6 +4,7 @@ use async_stream::stream;
 use futures::Stream;
 use serde::{Deserialize, Serialize};
 
+#[derive(Debug)]
 #[derive(Serialize, Deserialize)]
 pub enum Grade {
     #[serde(rename = "-")]
@@ -40,6 +41,7 @@ pub enum Grade {
     NP,
 }
 
+#[derive(Debug)]
 #[derive(Serialize, Deserialize)]
 pub struct Input {
     pub course_name: String,
@@ -47,6 +49,7 @@ pub struct Input {
     pub grade: Grade,
 }
 
+#[derive(Debug)]
 #[derive(Serialize, Deserialize)]
 #[serde(tag = "type", content = "value")]
 pub enum Output {
@@ -54,6 +57,7 @@ pub enum Output {
     Ok(usize),
 }
 
+#[derive(Debug)]
 pub struct TestCase {
     pub input: Input,
     pub output: Output,
