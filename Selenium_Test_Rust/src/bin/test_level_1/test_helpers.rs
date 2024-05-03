@@ -58,7 +58,7 @@ pub struct TestCase {
     pub output: Output,
 }
 
-pub async fn read_test_suites(test_root_dir: String) -> impl Stream<Item = TestCase> { 
+pub fn read_test_suites(test_root_dir: String) -> impl Stream<Item = TestCase> { 
     let test_case_folders = fs::read_dir(&test_root_dir).expect(format!("Folder {test_root_dir} should exist").as_str());
     
     stream! {
