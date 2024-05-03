@@ -23,7 +23,7 @@ using System.Windows.Shapes;
 
 namespace Selenium_Test
 {
-    internal class GradeCalDecisionTable
+    internal class GradeCalTest
     {
         public struct Input
         {
@@ -112,7 +112,7 @@ namespace Selenium_Test
             {
                 for (int i = 0; i < testcase.output.Count; i++)
                 {
-                    IReadOnlyList<IWebElement> rows = chromeDriver.FindElements(By.CssSelector($"div:nth-child({i + 4})>font)"));
+                    IReadOnlyList<IWebElement> rows = chromeDriver.FindElements(By.CssSelector($"div:nth-child({i + 4}) > font"));
                     string exp_result = testcase.output[i];
                     var data = rows[0].Text.Trim().Replace("\r", "").Replace("\n", "");
                     if (data != exp_result) return false;
@@ -131,6 +131,10 @@ namespace Selenium_Test
                 Testcase testcase = testList[testIndex];
                 chromeDriver.Url = "https://www.calculator.net/grade-calculator.html";
                 chromeDriver.Navigate();
+                Thread.Sleep(100);
+                var clearButton = chromeDriver.FindElement(By.CssSelector("table:nth-child(15) td:nth-child(2) > input"));
+                clearButton.Click();
+                Thread.Sleep(100);
                 for (int inputIndex = 0; inputIndex < testcase.input.Count; inputIndex++)
                 {
                     var name = chromeDriver.FindElement(By.Name($"d{inputIndex + 1}"));
