@@ -18,7 +18,25 @@ async fn main() -> Result<(), Box<dyn Error + Send + Sync>> {
 }
 
 async fn test_runner(web_driver: &WebDriver) -> Result<(), Box<dyn Error + Send + Sync>> {
-    let test_root_dir = String::from(Path::new(&env::current_dir().unwrap()).join("src").join("bin").join("test_level_1").join("test_suites").to_str().unwrap());
+    println!("Test equivalent class!");
+    let test_equivalent_class_root_dir = String::from(Path::new(&env::current_dir().unwrap()).join("src").join("bin").join("test_level_1").join("test_suites").join("equivalent_class").to_str().unwrap());
+    run_test_strategy(web_driver, test_equivalent_class_root_dir).await?;
+    println!("Done testing equivalent class!");
+
+    println!("Test boundary value!");
+    let test_boundary_value_root_dir = String::from(Path::new(&env::current_dir().unwrap()).join("src").join("bin").join("test_level_1").join("test_suites").join("boundary_value_analysis").to_str().unwrap());
+    run_test_strategy(web_driver, test_boundary_value_root_dir).await?;
+    println!("Done testing boundary value!");
+
+    println!("Test use case!");
+    let test_use_case_root_dir = String::from(Path::new(&env::current_dir().unwrap()).join("src").join("bin").join("test_level_1").join("test_suites").join("use_case").to_str().unwrap());
+    run_test_strategy(web_driver, test_use_case_root_dir).await?;
+    println!("Done testing use case!");
+
+    Ok(())
+}
+
+async fn run_test_strategy(web_driver: &WebDriver, test_root_dir: String) -> Result<(), Box<dyn Error + Send + Sync>> {
     let mut testcase_stream = read_test_suites(test_root_dir).boxed();
     
     while let Some(testcase) = testcase_stream.next().await {
