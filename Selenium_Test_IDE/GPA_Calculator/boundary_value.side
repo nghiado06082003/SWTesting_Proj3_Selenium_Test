@@ -1,0 +1,356 @@
+{
+  "id": "7bf2f4db-d134-4e46-af0f-05182cce1d1d",
+  "version": "2.0",
+  "name": "boundary_value_testing_GPA_calculator",
+  "url": "https://www.calculator.net/gpa-calculator.html",
+  "tests": [{
+    "id": "a7abb021-0fa2-404c-9766-b05ced4752bc",
+    "name": "Invalid credit",
+    "commands": [{
+      "id": "00182df3-5783-4421-8436-14e1ffc85a10",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58a6a40f-c47c-473a-83cc-eae7a067050c",
+      "comment": "Click Clear",
+      "command": "click",
+      "target": "css=table:nth-child(16) td:nth-child(2) > input",
+      "targets": [
+        ["css=table:nth-child(16) td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='Clear']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[6]/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[6]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfe70edc-4d06-4d82-b0b7-68ac0bef1637",
+      "comment": "Reset Grade 2",
+      "command": "type",
+      "target": "name=la2",
+      "targets": [
+        ["name=la2", "name"],
+        ["css=table:nth-child(3) select", "css:finder"],
+        ["xpath=//select[@name='la2']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[2]/tbody/tr/td[3]/select", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "256281c7-c8f0-4989-8bc6-2eda34e93cc6",
+      "comment": "Reset Grade 3",
+      "command": "type",
+      "target": "name=la3",
+      "targets": [
+        ["name=la2", "name"],
+        ["css=table:nth-child(3) select", "css:finder"],
+        ["xpath=//select[@name='la2']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[2]/tbody/tr/td[3]/select", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7c9b51b-8727-4d1b-9ec5-9c96208b0dc7",
+      "comment": "Set course name to Math",
+      "command": "type",
+      "target": "name=da1",
+      "targets": [
+        ["name=da1", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .inlonger", "css:finder"],
+        ["xpath=//input[@name='da1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Math"
+    }, {
+      "id": "7394ac79-8b32-462d-80dc-48651c600c89",
+      "comment": "Set credits to -1",
+      "command": "type",
+      "target": "name=ca1",
+      "targets": [
+        ["name=ca1", "name"],
+        ["css=td > table:nth-child(2) .innormal", "css:finder"],
+        ["xpath=//input[@name='ca1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "-1"
+    }, {
+      "id": "bd493e36-889a-43ae-a8c0-a245b8aa62de",
+      "comment": "Set Grade to C",
+      "command": "select",
+      "target": "name=la1",
+      "targets": [
+        ["name=la1", "name"],
+        ["css=tr:nth-child(2) select", "css:finder"],
+        ["xpath=//select[@name='la1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "C"
+    }, {
+      "id": "c39d7fcb-fec9-4cd0-bf50-d8e8f4af5e80",
+      "comment": "Click calculate",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=table:nth-child(16) td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[6]/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//table[6]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "954d841b-34ee-4055-8740-8e640ff8836d",
+      "comment": "Assert error message",
+      "command": "assertText",
+      "target": "css=font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[2]/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a valid credit for item #1.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a valid credit for item #1."
+    }]
+  }, {
+    "id": "db03d355-6e4d-4865-b3d1-b1d6e0c041df",
+    "name": "Boundary credit",
+    "commands": [{
+      "id": "b67d2574-a2e6-4bb0-81c1-3ceae3539f36",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "046976a0-e97e-4dc1-ac85-d75eebfc52e5",
+      "comment": "Click Clear",
+      "command": "click",
+      "target": "css=table:nth-child(16) td:nth-child(2) > input",
+      "targets": [
+        ["css=table:nth-child(16) td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='Clear']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[6]/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[6]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5737b4f2-a994-44d8-b4aa-9f793913b2d8",
+      "comment": "Reset Grade 2",
+      "command": "type",
+      "target": "name=la2",
+      "targets": [
+        ["name=la2", "name"],
+        ["css=table:nth-child(3) select", "css:finder"],
+        ["xpath=//select[@name='la2']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[2]/tbody/tr/td[3]/select", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b294085-2f8a-48df-a50e-02b3d47d89aa",
+      "comment": "Reset Grade 3",
+      "command": "type",
+      "target": "name=la3",
+      "targets": [
+        ["name=la2", "name"],
+        ["css=table:nth-child(3) select", "css:finder"],
+        ["xpath=//select[@name='la2']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[2]/tbody/tr/td[3]/select", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b83d42e-ca4a-4c23-908c-7d4712147023",
+      "comment": "Set course name to Math",
+      "command": "type",
+      "target": "name=da1",
+      "targets": [
+        ["name=da1", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .inlonger", "css:finder"],
+        ["xpath=//input[@name='da1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Math"
+    }, {
+      "id": "f30c166e-bccb-4b06-8d8e-2f2c74925c3c",
+      "comment": "Set credits to 0",
+      "command": "type",
+      "target": "name=ca1",
+      "targets": [
+        ["name=ca1", "name"],
+        ["css=td > table:nth-child(2) .innormal", "css:finder"],
+        ["xpath=//input[@name='ca1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "e0e8fd7b-48d8-4f0e-b03e-50c75091cc4c",
+      "comment": "Set Grade to C",
+      "command": "select",
+      "target": "name=la1",
+      "targets": [
+        ["name=la1", "name"],
+        ["css=tr:nth-child(2) select", "css:finder"],
+        ["xpath=//select[@name='la1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "C"
+    }, {
+      "id": "ce7863a8-f922-4b11-99bb-f0a1ed94c994",
+      "comment": "Click calculate",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=table:nth-child(16) td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[6]/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//table[6]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56af2774-28c7-4bdb-8cfd-72fcdeb5fe18",
+      "comment": "Assert result",
+      "command": "assertText",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='content']/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Total Credits: 0')]", "xpath:innerText"]
+      ],
+      "value": "Total Credits: 0"
+    }]
+  }, {
+    "id": "91278293-93ad-49dc-ada6-86c8de43e4cf",
+    "name": "Valid credit",
+    "commands": [{
+      "id": "73a3ab68-c738-4f6d-9205-ad8a6a4da45b",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eca5ee76-018a-48ff-896a-6100262513f4",
+      "comment": "Click Clear",
+      "command": "click",
+      "target": "css=table:nth-child(16) td:nth-child(2) > input",
+      "targets": [
+        ["css=table:nth-child(16) td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='Clear']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[6]/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//table[6]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcdd947b-8330-476a-969a-adcfd595f20f",
+      "comment": "Reset Grade 2",
+      "command": "type",
+      "target": "name=la2",
+      "targets": [
+        ["name=la2", "name"],
+        ["css=table:nth-child(3) select", "css:finder"],
+        ["xpath=//select[@name='la2']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[2]/tbody/tr/td[3]/select", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ad4a5f-d659-4b2d-a176-fcda367f0b30",
+      "comment": "Reset Grade 3",
+      "command": "type",
+      "target": "name=la3",
+      "targets": [
+        ["name=la2", "name"],
+        ["css=table:nth-child(3) select", "css:finder"],
+        ["xpath=//select[@name='la2']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[2]/tbody/tr/td[3]/select", "xpath:idRelative"],
+        ["xpath=//table[2]/tbody/tr/td[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad8bcc52-0730-4435-a033-eaa30fc593ab",
+      "comment": "Set course name to Math",
+      "command": "type",
+      "target": "name=da1",
+      "targets": [
+        ["name=da1", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(1) > .inlonger", "css:finder"],
+        ["xpath=//input[@name='da1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Math"
+    }, {
+      "id": "aa55d620-1c26-4fbc-a8b5-8ce2c2cbb289",
+      "comment": "Set credits to 1",
+      "command": "type",
+      "target": "name=ca1",
+      "targets": [
+        ["name=ca1", "name"],
+        ["css=td > table:nth-child(2) .innormal", "css:finder"],
+        ["xpath=//input[@name='ca1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "5de3dd57-2981-405a-8900-02c133cb2cff",
+      "comment": "Set Grade to C",
+      "command": "select",
+      "target": "name=la1",
+      "targets": [
+        ["name=la1", "name"],
+        ["css=tr:nth-child(2) select", "css:finder"],
+        ["xpath=//select[@name='la1']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table/tbody/tr[2]/td[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "C"
+    }, {
+      "id": "3b1bc3e2-371d-4a6f-bf92-f7473c985fcf",
+      "comment": "Click calculate",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=table:nth-child(16) td:nth-child(1) > input", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/form/table/tbody/tr/td/table[6]/tbody/tr/td/input", "xpath:idRelative"],
+        ["xpath=//table[6]/tbody/tr/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4efc94b2-53d1-4679-b828-6b36fb0b88da",
+      "comment": "Assert GPA",
+      "command": "assertText",
+      "target": "css=.verybigtext > b",
+      "targets": [
+        ["css=.verybigtext > b", "css:finder"],
+        ["xpath=//div[@id='content']/p[2]/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'GPA: 2')]", "xpath:innerText"]
+      ],
+      "value": "GPA: 2"
+    }]
+  }],
+  "suites": [{
+    "id": "a66fbabe-755a-4651-afd8-4af78df5a23d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a7abb021-0fa2-404c-9766-b05ced4752bc", "db03d355-6e4d-4865-b3d1-b1d6e0c041df", "91278293-93ad-49dc-ada6-86c8de43e4cf"]
+  }],
+  "urls": ["https://www.calculator.net/gpa-calculator.html"],
+  "plugins": []
+}
