@@ -50,7 +50,7 @@ pub struct Input {
 #[derive(Serialize, Deserialize)]
 #[serde(tag = "type", content = "value")]
 pub enum Output {
-    Error(String),
+    Error(Vec<String>),
     Ok(usize),
 }
 
