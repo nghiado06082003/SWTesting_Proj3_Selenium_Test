@@ -1,0 +1,2403 @@
+{
+  "id": "9ad70ad5-18af-4d48-92d7-53cd7c37e054",
+  "version": "2.0",
+  "name": "Salary Calculator Testing",
+  "url": "https://www.calculator.net/",
+  "tests": [{
+    "id": "00baee83-9feb-4d9e-8c3f-61dc51b03de9",
+    "name": "SAL-EQV-2",
+    "commands": [{
+      "id": "7f0c594d-e0ce-4cc2-90c2-08006c7309b3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2909c19d-bf9e-4f44-9210-d432bc9d1773",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54a6be60-658a-42c4-9bd4-dbe388e45346",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6455487-873e-4142-8f32-dbfb9508350f",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "7165295d-5648-450f-a4f1-eed2aee86619",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f7cc38c-e74b-458e-9f38-31b8362535a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "9a7c86cd-b825-4a61-a888-88153539ac42",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bd26e00-c8c4-45aa-bde6-8df881f1d577",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "285f6669-11bc-4e11-ad84-660eadc1d6b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4529b1f0-a828-45a0-8dce-8b2b01bbd0b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "4f76e110-8aa2-40db-8a19-24987d8f5f2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "656a9fe9-cc23-458a-82e4-4a68b763ec8d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "d80c8fca-64ef-467a-8f7a-e914dfb9f7d4",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b44af364-201f-43a9-a96b-55e7a4d44d7c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$100.00')]", "xpath:innerText"]
+      ],
+      "value": "$100.00"
+    }, {
+      "id": "6c2577c5-b832-4017-91e0-158ed2e3e55e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$92.31')]", "xpath:innerText"]
+      ],
+      "value": "$92.31"
+    }, {
+      "id": "081fca5e-1321-42bd-a792-b18c130906d3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$800.00')]", "xpath:innerText"]
+      ],
+      "value": "$800.00"
+    }, {
+      "id": "8b1a1542-9112-4d66-92c8-6640e267318e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[3]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$738.46')]", "xpath:innerText"]
+      ],
+      "value": "$738.46"
+    }, {
+      "id": "23832466-a4a2-41da-ae1e-a10cdab4f224",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[4]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$4,000')]", "xpath:innerText"]
+      ],
+      "value": "$4,000"
+    }, {
+      "id": "378e1b9b-922c-4aa4-9a6c-e8d6c631d069",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[4]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$3,692')]", "xpath:innerText"]
+      ],
+      "value": "$3,692"
+    }, {
+      "id": "a735facf-5415-4cf9-b75a-1a4ace0cb7fa",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(5) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(5) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[5]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[5]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$8,000')]", "xpath:innerText"]
+      ],
+      "value": "$8,000"
+    }, {
+      "id": "018b4795-3370-405c-a0b8-9f94560f04e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[5]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$7,385')]", "xpath:innerText"]
+      ],
+      "value": "$7,385"
+    }, {
+      "id": "49fcf5cc-7376-4275-99bc-9a36519e338d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(6) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(6) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[6]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$8,667')]", "xpath:innerText"]
+      ],
+      "value": "$8,667"
+    }, {
+      "id": "f1b68102-419b-439e-be7f-39524d016b45",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(6) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(6) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[6]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]", "xpath:position"]
+      ],
+      "value": "$8,000"
+    }, {
+      "id": "91387500-a257-4d4c-85f7-e587001da3a8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(7) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(7) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[7]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$17,333')]", "xpath:innerText"]
+      ],
+      "value": "$17,333"
+    }, {
+      "id": "2f92ce9e-2e9a-42a3-af87-0d49d781ce4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(7) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(7) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[7]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$16,000')]", "xpath:innerText"]
+      ],
+      "value": "$16,000"
+    }, {
+      "id": "f933d2d8-7868-48aa-9d8e-aba3ebaa31b2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(8) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(8) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[8]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$52,000')]", "xpath:innerText"]
+      ],
+      "value": "$52,000"
+    }, {
+      "id": "33e8b87c-b6f3-4f68-8039-99664a2c0579",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(8) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(8) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[8]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$48,000')]", "xpath:innerText"]
+      ],
+      "value": "$48,000"
+    }, {
+      "id": "1e9b564e-b425-46d2-a9f7-d1958807cb0c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(9) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(9) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[9]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$208,000')]", "xpath:innerText"]
+      ],
+      "value": "$208,000"
+    }, {
+      "id": "80458194-f695-404f-97bf-22f02a5afe8e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(9) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(9) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[9]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$192,000')]", "xpath:innerText"]
+      ],
+      "value": "$192,000"
+    }, {
+      "id": "599158d7-f0ef-486d-b7fa-6c07680645ea",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "311f580f-8cb7-4944-aaa9-2da4f0ef0dc5",
+    "name": "SAL-EQV-1",
+    "commands": [{
+      "id": "d67bb859-d207-4000-920f-27de5dc7524b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "92f354c2-80de-47d9-846d-ba03a523e018",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b9f691f-e1e8-4e4c-b12d-2669db81883c",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc89c963-3f6f-4d34-bf79-97b2ca4d21e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-1"
+    }, {
+      "id": "f35536b3-f363-4b3e-82da-75ed0993fa0a",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "614b3a80-2bb5-4ba4-ba6a-737339d03054",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "-2"
+    }, {
+      "id": "189e5398-7ba6-4402-bdc9-0137d76d7e04",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "796a391d-bb82-40d1-b1f0-1325e73bcc81",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "-3"
+    }, {
+      "id": "165f1a6e-1689-4790-b099-f00ecaad82c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4868fa5-b899-4701-b309-9a865471515b",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "-4"
+    }, {
+      "id": "1cea0340-feae-492d-94f6-f862e0ba25d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "161d34d5-d487-4444-97ce-d29fff4456e2",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "-5"
+    }, {
+      "id": "05027629-5035-49ca-b503-065f84a7139d",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ce6ac1a-03ea-4253-98e9-72517007863b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive salary amount."
+    }, {
+      "id": "9426e1f0-8510-4e0c-b2b5-353e4bdc5207",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive hours per week value."
+    }, {
+      "id": "3699a366-eb99-46ad-aeb8-4a5969615da5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(3) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive days per week value."
+    }, {
+      "id": "89ccf8b0-cbe5-40f2-9db5-0530b07fb37e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(4) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive holidays per year value."
+    }, {
+      "id": "cf87a5f6-e4a7-4e94-9285-92a066c1ff38",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(5) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive vacation days per year value."
+    }, {
+      "id": "5e1693eb-23cd-4d56-9db6-4420f8640dfe",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1da1fcc8-f22f-4a85-b58d-859d0ccdf5c0",
+    "name": "SAL-EQV-3",
+    "commands": [{
+      "id": "c9a12f6e-e3d2-4cfc-8158-7f4c01bef7eb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6c6a4cf-c457-4d77-bf65-1e5594f1fe95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11507b6d-26bd-483c-907f-b0519cfcda67",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c38b902d-a98c-4c39-83be-28afd8a0e560",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "0"
+    }, {
+      "id": "d57d5410-c0ee-4f49-ae75-94f688930861",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54aec16b-f52d-4040-adc2-f1ecfcce1664",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "169"
+    }, {
+      "id": "c7ff6876-e49b-43dc-a5f0-78afb22f0aeb",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa2ba233-35cc-4533-b7ef-48f36fa32106",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "50"
+    }, {
+      "id": "664eda55-41d3-4838-a8fb-3498105b23cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea64945b-af9e-46bd-8e39-4581b76e05a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "300"
+    }, {
+      "id": "a07ead51-739f-49e0-aa94-2962163e6fa7",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf821d13-0824-463c-b063-fa8726b6a3a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "300"
+    }, {
+      "id": "d50d6034-980b-40cf-bf2b-c35ab65cb821",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0db58821-9675-4eef-a61c-e35ce52e5c9b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a hours per week value that is not more than 168."
+    }, {
+      "id": "790b2a07-cbe5-4520-bd28-9648d2fc7cff",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(2) > font",
+      "targets": [
+        ["css=div:nth-child(1) > font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a days per week value that is not more than 7."
+    }, {
+      "id": "a1d85c3f-fa03-4f83-bef9-6304977b68b1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "14a92364-1213-42c2-b50c-3b5b15457393",
+    "name": "SAL-DEC-1",
+    "commands": [{
+      "id": "bd0d2348-0195-4dd8-8a55-47f4155636a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "746afb4e-e3b3-4375-9387-562f6aff408e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ab17ea8-5909-4387-872e-488eb0fe0ee2",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f755cd26-a79a-470b-9fc2-1a8cc18eb752",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-1"
+    }, {
+      "id": "322a3957-5c0f-4d7e-80c9-eb09bebf7f6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "413fedc3-8554-455c-8989-cc75ee943a6a",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "2"
+    }, {
+      "id": "cd957cf6-db8c-4528-8ee1-4329f61e57b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d76d6556-2a0e-418a-a992-df368f834558",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "3"
+    }, {
+      "id": "dd5b1078-a2b7-4c03-8566-a6b68296b491",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db27125b-b76f-4de4-8b00-cc2c9d3be62c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "4"
+    }, {
+      "id": "8782c2a9-ef34-4594-b75d-78b57f1b42ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4021b63a-df12-43db-bd4d-685669bd9d2c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "ab62559e-ede8-4061-99ff-e5365478e04b",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef3632b8-ff63-4f34-9014-2cfee1a426e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive salary amount."
+    }, {
+      "id": "b5f798df-83ae-470a-9cf3-030bd94f3871",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "453c96b4-12b4-4619-a58a-ef88698dd01e",
+    "name": "SAL-DEC-2",
+    "commands": [{
+      "id": "5e4f835d-2a49-4099-9638-ee374de25ca5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ac972ae-0680-4817-975a-3fb3157c517f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3e189d4-2f5a-4c1c-a213-afe9f887fb85",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "52d8b067-6c79-42da-8ffc-a65e8209826b",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "f983bceb-fde2-4395-a492-27f9e2dff128",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8fbff43-36a4-4d6c-91dc-cddd7bfa3559",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "169"
+    }, {
+      "id": "9bbf8c8e-6aff-49c2-98be-9374a87aadda",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16ad4687-daf5-48f9-8149-654d1fb49a87",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "3"
+    }, {
+      "id": "e537d5dd-44c8-4fa6-a9db-d49bfcec19a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c3742ff-ae9d-478b-9653-957029754dc7",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "4"
+    }, {
+      "id": "9bb2ef91-2d05-4687-82f6-272c94b7b054",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "909ee2b1-1c46-4e65-a517-cf3c855b0f3a",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "6"
+    }, {
+      "id": "2ec8de70-b2af-400a-89b1-5e342a60502e",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a016a00b-d158-4d9b-a676-bb6bf5dbe061",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a hours per week value that is not more than 168."
+    }, {
+      "id": "47762686-0bda-4f7b-8aa2-685347f2efb8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "080927ba-22ad-4901-886c-48ee7b4da129",
+    "name": "SAL-DEC-3",
+    "commands": [{
+      "id": "b584ea27-2206-46b0-b937-355a12e65ab3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07a3a7b9-9864-4182-9813-22166452cd3f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e7c61e97-bb44-43b4-a611-4dcc26198966",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95384596-d6fa-48ff-b5f0-1334e39c8971",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "4ab247e0-d070-47f6-813f-e2c4f3501c88",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e89f7af8-117f-492d-8b4d-4dfa2e848816",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "d27c3ddf-6f44-4a1c-bf30-9810b1b220a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae916bcb-5ab8-4cbc-a5fd-6c7a20e90155",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "2d35eb4a-2491-4d72-832b-565110cf1d8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0aa178e4-e7cd-41b0-98c3-1f031eeb20dd",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "4"
+    }, {
+      "id": "0561e3b5-b1b1-4ad7-9018-29e38b953d3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91dc1e96-836e-43cf-8b4f-a81fc85c1499",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "6"
+    }, {
+      "id": "9198d2ec-8e5e-49af-beb4-ba784842628f",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1484a2cf-9f3b-497f-8742-f24564e2f9f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a days per week value that is not more than 7."
+    }, {
+      "id": "e16a0838-c663-43b1-9bae-44e1775d9c81",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5b6d90b3-87d5-40c1-8b78-702962b7b1a7",
+    "name": "SAL-DEC-4",
+    "commands": [{
+      "id": "9c909730-001b-4414-b486-78ebc923af9f",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b014619-5c27-4fc6-bfab-c2c04d3a1428",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "515fd893-dbc2-477c-aa67-06d35c23d5e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b38cb9e4-9da0-410d-b43c-36810760d634",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "c060127f-737b-481c-a5eb-eda807f7df39",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48b0049f-9143-4f9d-a2e5-03d380a351fb",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "5a7539f9-5f88-462f-a0d5-de94ebfe5a20",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26314bad-e5d9-4009-97c2-ce70b0bc7640",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "0c49f621-22aa-4a31-aa84-4c12bc5977c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "027a7cf8-d867-418a-8e3c-37ecb88c0f41",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "150"
+    }, {
+      "id": "694f5135-bda8-487d-b88b-2404c69395eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a24402b-dcd8-49d4-bf31-31ac394c9e8f",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "150"
+    }, {
+      "id": "968105c9-0a34-4fc2-97fc-299ac367a684",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1e2bd39-3556-4e4c-bdc8-ff50e447d77c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "The number of holidays and vacation days are out of range for this calculator!"
+    }, {
+      "id": "c0a11fe3-297f-46ac-8a74-79b0a06368b5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3b911b3f-e542-4f41-92b9-01bf170f9258",
+    "name": "SAL-DEC-5",
+    "commands": [{
+      "id": "31f522fd-0a33-40af-bb7d-89237bc612d4",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79614a0f-8a7f-4b6d-bc03-2f0f8f57567b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5274aa1e-c227-49be-abfc-ee2b8e094022",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "db0ba704-f1e7-4b6e-a1bb-fa702fa2c0ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "7ce17b40-719a-418c-b113-96de2ff48212",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0bdb064-241a-4560-ba17-07a052b4b04e",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "45ca33a5-da3c-4920-88d5-1fea359582c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29d79746-48de-42cc-8c0c-2e842efb716e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "12957e20-5f73-469c-b5f1-5d55303c285a",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc5c3b34-5469-4f1f-a8b8-56d9df228461",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "94f0c1e4-0830-44ea-844d-c56f37ad5422",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b223460f-ca41-4bff-8f56-fada4ee86e41",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "ad986769-8d8f-4a99-ad6f-dacb6f430ffe",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bcfa0f0-4ce1-4700-bb5e-0770f80f1f44",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$100.00')]", "xpath:innerText"]
+      ],
+      "value": "$100.00"
+    }, {
+      "id": "1ef8ce80-d7cf-4af9-8ead-1045b7b7e6f5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$92.31')]", "xpath:innerText"]
+      ],
+      "value": "$92.31"
+    }, {
+      "id": "57831a65-b34e-4ce8-9878-569a7fcd2436",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$800.00')]", "xpath:innerText"]
+      ],
+      "value": "$800.00"
+    }, {
+      "id": "c58f2b8c-5a96-4e1d-acca-24a511269ab0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[3]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$738.46')]", "xpath:innerText"]
+      ],
+      "value": "$738.46"
+    }, {
+      "id": "3c58d0b4-4078-4974-bd9f-6af823f906f2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[4]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$4,000')]", "xpath:innerText"]
+      ],
+      "value": "$4,000"
+    }, {
+      "id": "11305413-5679-4a25-a1ef-b37264ab65a5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[4]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$3,692')]", "xpath:innerText"]
+      ],
+      "value": "$3,692"
+    }, {
+      "id": "54d5fdf5-aef0-47a9-abf1-a4020c6a6b49",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(5) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(5) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[5]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[5]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$8,000')]", "xpath:innerText"]
+      ],
+      "value": "$8,000"
+    }, {
+      "id": "9cad6ef6-fab2-4766-9836-626a121d1ae7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[5]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$7,385')]", "xpath:innerText"]
+      ],
+      "value": "$7,385"
+    }, {
+      "id": "beaed4ec-388f-4941-9336-549d26e9765f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(6) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(6) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[6]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$8,667')]", "xpath:innerText"]
+      ],
+      "value": "$8,667"
+    }, {
+      "id": "0f5bd1c9-42b5-4a6b-8a4f-edffd1de6f4d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(6) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(6) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[6]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]", "xpath:position"]
+      ],
+      "value": "$8,000"
+    }, {
+      "id": "2d4b9927-2987-49ae-8086-0207f3f85a12",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(7) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(7) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[7]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$17,333')]", "xpath:innerText"]
+      ],
+      "value": "$17,333"
+    }, {
+      "id": "6462c00f-6411-4850-b666-c4382e870923",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(7) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(7) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[7]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$16,000')]", "xpath:innerText"]
+      ],
+      "value": "$16,000"
+    }, {
+      "id": "51d3bc56-7e26-429b-82d6-116d34384cde",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(8) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(8) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[8]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$52,000')]", "xpath:innerText"]
+      ],
+      "value": "$52,000"
+    }, {
+      "id": "f01442c9-af94-4582-84a7-d19fdf9701f9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(8) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(8) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[8]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$48,000')]", "xpath:innerText"]
+      ],
+      "value": "$48,000"
+    }, {
+      "id": "ab58e69d-3a04-40a8-9a5f-a62cc4df5e24",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(9) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(9) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[9]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$208,000')]", "xpath:innerText"]
+      ],
+      "value": "$208,000"
+    }, {
+      "id": "43c9c4bf-9449-463c-8ce2-b70f42dc8bf3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(9) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(9) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[9]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$192,000')]", "xpath:innerText"]
+      ],
+      "value": "$192,000"
+    }, {
+      "id": "84a941e5-d2c7-4ba1-9362-8ba6ccad87b6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "90707f04-ba10-4b0f-b3bf-563c06311d00",
+    "name": "SAL-UC-1",
+    "commands": [{
+      "id": "78d17c4a-10a9-4d25-bf90-bea0d927c996",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9fe83bb-e3e7-4e61-9185-456cc9a30d24",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a963cad-f570-4b17-9657-1342f390f881",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a52d14b9-43a4-4ad9-8a4e-f5733e4b7862",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "100"
+    }, {
+      "id": "91d5ab71-0dc1-425f-a1a3-a98cb61353ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae8f78e4-29c6-4d9e-aa89-c5bc70ee3a09",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "f88272e4-5425-4fdb-b546-0781964a7a4b",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac0f102c-0210-4764-8930-2d04d7bca141",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "708fd367-9aad-427e-a078-3a7465fab923",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b2ea3a7-08ce-4247-ac4f-b83cd724b43e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "3ea19e8d-267c-4129-b8f9-ba754d113b8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7015184d-3bb7-4ba1-9dd7-582ce014e77d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "d8124ac0-1a5d-47c9-a161-65e9e6b89dc0",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "74c39f72-dee4-483c-92a7-5d63b646c0c8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(2) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(2) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[2]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[2]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$100.00')]", "xpath:innerText"]
+      ],
+      "value": "$100.00"
+    }, {
+      "id": "3db702f8-cdc4-4a8b-9b87-196b71d73e29",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$92.31')]", "xpath:innerText"]
+      ],
+      "value": "$92.31"
+    }, {
+      "id": "b99493a5-ea56-4856-b9d8-8695e15ec1d3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(3) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(3) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[3]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$800.00')]", "xpath:innerText"]
+      ],
+      "value": "$800.00"
+    }, {
+      "id": "3e11d092-21c2-4022-ae0e-1f02738aaac2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(3) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[3]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$738.46')]", "xpath:innerText"]
+      ],
+      "value": "$738.46"
+    }, {
+      "id": "3f81472c-c982-46e0-92ef-b4e2f57fa60b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[4]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[4]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$4,000')]", "xpath:innerText"]
+      ],
+      "value": "$4,000"
+    }, {
+      "id": "f14ccc93-4579-4a26-b125-ad1dd303ab46",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[4]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$3,692')]", "xpath:innerText"]
+      ],
+      "value": "$3,692"
+    }, {
+      "id": "88c543a0-69af-470c-9941-ae2a763d1141",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(5) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(5) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[5]/td[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/table/tbody/tr[5]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$8,000')]", "xpath:innerText"]
+      ],
+      "value": "$8,000"
+    }, {
+      "id": "8a73c957-7051-4bb2-b5f8-0d8afd0d31fe",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(5) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(5) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[5]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$7,385')]", "xpath:innerText"]
+      ],
+      "value": "$7,385"
+    }, {
+      "id": "b7d9cb51-300f-4836-bf6c-776bd0aada33",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(6) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(6) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[6]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$8,667')]", "xpath:innerText"]
+      ],
+      "value": "$8,667"
+    }, {
+      "id": "e1121ab5-10d8-4b2d-99a4-3666c1f69d66",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(6) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(6) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[6]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[3]", "xpath:position"]
+      ],
+      "value": "$8,000"
+    }, {
+      "id": "73e6278e-557d-4f83-b06d-701b449c5593",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(7) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(7) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[7]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$17,333')]", "xpath:innerText"]
+      ],
+      "value": "$17,333"
+    }, {
+      "id": "1e7420b2-3e0f-4a4a-bfd8-d22fe6822575",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(7) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(7) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[7]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$16,000')]", "xpath:innerText"]
+      ],
+      "value": "$16,000"
+    }, {
+      "id": "28657587-ddb9-4f29-832b-5dedf25148ae",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(8) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(8) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[8]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$52,000')]", "xpath:innerText"]
+      ],
+      "value": "$52,000"
+    }, {
+      "id": "3d96e52d-33ba-4adc-bb3b-5b2dca3acfc4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(8) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(8) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[8]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$48,000')]", "xpath:innerText"]
+      ],
+      "value": "$48,000"
+    }, {
+      "id": "b9e94fa6-665c-46e6-a35f-b5a800f372a7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.cinfoT:nth-child(4) tr:nth-child(9) > td:nth-child(2)",
+      "targets": [
+        ["css=.cinfoT:nth-child(4) tr:nth-child(9) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[9]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'$208,000')]", "xpath:innerText"]
+      ],
+      "value": "$208,000"
+    }, {
+      "id": "634322fe-89b9-4067-9b18-f4f63e7fc30c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(9) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(9) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/table/tbody/tr[9]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[9]/td[3]", "xpath:position"],
+        ["xpath=//td[contains(.,'$192,000')]", "xpath:innerText"]
+      ],
+      "value": "$192,000"
+    }, {
+      "id": "431e997e-a276-42f8-b123-289215883380",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2d90d419-afe6-4327-a4d5-ccd86d68d05e",
+    "name": "SAL-UC-2",
+    "commands": [{
+      "id": "4a8e0071-f583-4977-a72f-405ad084d019",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ecef312-5a5d-4c77-be6a-cef4789f71f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c86d0279-8876-48ac-b841-f18c0533ac2e",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f1ceb6c-00de-41a9-9ab4-85680eb912b6",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f54c4ad5-4200-4878-b4bb-412a1669f8ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dc71a3f-1ea4-49e3-b397-7fbeb0efd8d3",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "a6eab8fb-002a-4bdb-82c6-1824b1b4dc7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47833e23-181d-40dd-ac59-152a5af27488",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "d10c1bbb-4640-4f89-b744-2f7726a72000",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7cb4474-7393-4967-9e20-280e4e9ad108",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "33e5d5a5-bee3-49a9-98d8-6f15014c2e08",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a2c8c23-c7da-4074-8f60-b9a9eb3586af",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "11"
+    }, {
+      "id": "7b5bda40-5985-439c-a67b-e1ecbda55edf",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54d28224-866e-4f80-b2ae-6aed17289946",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive salary amount."
+    }, {
+      "id": "1b72ee65-daf6-4865-941d-9a3972a64ade",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "301252b3-4c7a-4d2b-83bf-9545b6eae85e",
+    "name": "SAL-UC-3",
+    "commands": [{
+      "id": "a4a58b90-ac7f-4a4d-91ae-5d0a4498323d",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.calculator.net/salary-calculator.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0ec62803-b439-462c-9dc3-1523f27411d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1024x812",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d24481a4-7d12-4eea-8458-ce0373a8f126",
+      "comment": "",
+      "command": "click",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "72790731-bc9b-4578-ae5f-7806a8d8dfa3",
+      "comment": "",
+      "command": "type",
+      "target": "id=camount",
+      "targets": [
+        ["id=camount", "id"],
+        ["name=camount", "name"],
+        ["css=#camount", "css:finder"],
+        ["xpath=//input[@id='camount']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr/td/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "-100"
+    }, {
+      "id": "1bca8b27-a220-49a1-88fe-658b8b168369",
+      "comment": "",
+      "command": "click",
+      "target": "id=chours",
+      "targets": [
+        ["id=chours", "id"],
+        ["name=chours", "name"],
+        ["css=#chours", "css:finder"],
+        ["xpath=//input[@id='chours']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "201728ec-da61-4e8d-90b1-5791231dbf05",
+      "comment": "",
+      "command": "type",
+      "target": "id=chours",
+      "targets": [],
+      "value": "40"
+    }, {
+      "id": "bb622d8d-ca89-4402-a344-c0182ece1d09",
+      "comment": "",
+      "command": "click",
+      "target": "id=cdays",
+      "targets": [
+        ["id=cdays", "id"],
+        ["name=cdays", "name"],
+        ["css=#cdays", "css:finder"],
+        ["xpath=//input[@id='cdays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df144b5a-a320-4844-95ce-2d5fd3decaec",
+      "comment": "",
+      "command": "type",
+      "target": "id=cdays",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "99e400f3-8afb-4883-8529-d101ecc47077",
+      "comment": "",
+      "command": "click",
+      "target": "id=cholidays",
+      "targets": [
+        ["id=cholidays", "id"],
+        ["name=cholidays", "name"],
+        ["css=#cholidays", "css:finder"],
+        ["xpath=//input[@id='cholidays']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5544508-cd74-4f47-8e21-4bd2b04f0708",
+      "comment": "",
+      "command": "type",
+      "target": "id=cholidays",
+      "targets": [],
+      "value": "10"
+    }, {
+      "id": "dd4faf60-dc97-4f29-a34b-4e7d1f595c21",
+      "comment": "",
+      "command": "click",
+      "target": "id=cvacation",
+      "targets": [
+        ["id=cvacation", "id"],
+        ["name=cvacation", "name"],
+        ["css=#cvacation", "css:finder"],
+        ["xpath=//input[@id='cvacation']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1654cd9-8e70-4ce0-8fe4-95e1e6bec32d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cvacation",
+      "targets": [],
+      "value": "12"
+    }, {
+      "id": "9f7c72f6-e41a-4848-b076-2e2fa1c8158e",
+      "comment": "",
+      "command": "click",
+      "target": "name=x",
+      "targets": [
+        ["name=x", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='x']", "xpath:attributes"],
+        ["xpath=//div[@id='content']/div[3]/form/table/tbody/tr[6]/td/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f56e1a73-2f12-42c5-9dea-81d08700a0b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(1) > font",
+      "targets": [
+        ["css=font", "css:finder"],
+        ["xpath=//div[@id='content']/div[3]/div[2]/div/font", "xpath:idRelative"],
+        ["xpath=//font", "xpath:position"],
+        ["xpath=//font[contains(.,'Please provide a positive salary amount.')]", "xpath:innerText"]
+      ],
+      "value": "Please provide a positive salary amount."
+    }, {
+      "id": "21947a99-1384-4c9f-a06f-5edc26b02f1e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "67d40147-20a9-46e5-b27d-bcc7346d6fc5",
+    "name": "Equivalence Class Partitioning Testing Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["00baee83-9feb-4d9e-8c3f-61dc51b03de9", "311f580f-8cb7-4944-aaa9-2da4f0ef0dc5", "1da1fcc8-f22f-4a85-b58d-859d0ccdf5c0"]
+  }, {
+    "id": "0569a96c-c048-476b-b4f3-87f845980f8b",
+    "name": "Decision Table Testing Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["14a92364-1213-42c2-b50c-3b5b15457393", "453c96b4-12b4-4619-a58a-ef88698dd01e", "080927ba-22ad-4901-886c-48ee7b4da129", "5b6d90b3-87d5-40c1-8b78-702962b7b1a7", "3b911b3f-e542-4f41-92b9-01bf170f9258"]
+  }, {
+    "id": "293f734e-f073-44bf-985e-225ae4c353ba",
+    "name": "Use-case Testing Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["90707f04-ba10-4b0f-b3bf-563c06311d00", "301252b3-4c7a-4d2b-83bf-9545b6eae85e", "2d90d419-afe6-4327-a4d5-ccd86d68d05e"]
+  }],
+  "urls": ["https://www.calculator.net/"],
+  "plugins": []
+}
