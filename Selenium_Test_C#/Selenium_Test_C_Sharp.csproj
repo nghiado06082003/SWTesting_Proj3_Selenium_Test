@@ -203,6 +203,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="PercentageTest.cs" />
+    <Compile Include="ProbabilityTest.cs" />
     <Compile Include="GradeCalTest.cs" />
     <Compile Include="AgeCalBoundary.cs" />
     <Compile Include="AgeCalDecisionTable.cs" />
