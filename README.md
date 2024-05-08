@@ -40,6 +40,15 @@ Note: Please **ENSURE** to update this section if there are changes in the futur
 6. To run test level 1, run `cargo run --bin test_level_1`.
 7. To run test level 2, run `cargo run --bin test_level_2`.
 
+### Python
+
+1. `cd` to `Selenium_Test_Python`.
+2. Install Selenium for Python using pip: `pip install -r requirements.txt`
+3. There are 2 subfolders: **test_cases** contains all the data files written in json, and **test_suites** contains all the implementation for the testing using Selenium and `unittest` framework of Python.
+4. To create a new test suite, create a json input data file in *test_cases*. Then in *test_suites*, create a test suite class that inherits the `unittest.TestCase` class. Remember to export this file into `__init__.py` file in this folder.
+5. To test all the suites, simply run the `main.py` file, or run this command: `python -m unittest`.
+6. To test a single suite, run this command: `python -m unittest <suite_to_be_tested>`. For example: `python -m unittest test_suites.TimeCalculatorSuite`
+
 ## Some notes about the project (MUST READ):
 
 * The data input for the test cases of the `Probability Calculator` feature is placed in the file `Selenium_Test/bin/Debug/Testcase_Probability.xlsx`. This file has been configured in `.gitignore` to avoid being ignored, so when cloning the project, make sure to have this file.
@@ -53,3 +62,4 @@ Note: Please **ENSURE** to update this section if there are changes in the futur
 * Selenium.Chrome.WebDriver
 * C# - WPF App (.NET Framework)
 * Rust - `thirtyfour` crate
+* Python - `unittest` framework

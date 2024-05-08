@@ -1,5 +1,5 @@
 import unittest
-from testsuites import *
+from test_suites import *
 
 if __name__ == "__main__":
     unittest.main()

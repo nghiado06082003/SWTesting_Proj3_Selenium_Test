@@ -1,0 +1,477 @@
+[
+  {
+    "test_name": "TIME-DIFF-001",
+    "input": {
+      "tcday1": "500",
+      "tchour1": "12",
+      "tcminute1": "30",
+      "tcsecond1": "30",
+      "tcday2": "500",
+      "tchour2": "12",
+      "tcminute2": "30",
+      "tcsecond2": "30"
+    },
+    "expected_output": {
+      "days": "0 days",
+      "hours": "0 hours",
+      "minutes": "0 minutes",
+      "seconds": "0 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-002",
+    "input": {
+      "tcday1": "500",
+      "tchour1": "12",
+      "tcminute1": "30",
+      "tcsecond1": "30",
+      "tcday2": "0",
+      "tchour2": "0",
+      "tcminute2": "0",
+      "tcsecond2": "0"
+    },
+    "expected_output": {
+      "days": "500 days",
+      "hours": "12 hours",
+      "minutes": "30 minutes",
+      "seconds": "30 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-003",
+    "input": {
+      "tcday1": "500",
+      "tchour1": "12",
+      "tcminute1": "30",
+      "tcsecond1": "30",
+      "tcday2": "1",
+      "tchour2": "1",
+      "tcminute2": "1",
+      "tcsecond2": "1"
+    },
+    "expected_output": {
+      "days": "499 days",
+      "hours": "11 hours",
+      "minutes": "29 minutes",
+      "seconds": "29 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-004",
+    "input": {
+      "tcday1": "500",
+      "tchour1": "12",
+      "tcminute1": "30",
+      "tcsecond1": "30",
+      "tcday2": "999",
+      "tchour2": "22",
+      "tcminute2": "58",
+      "tcsecond2": "58"
+    },
+    "expected_output": {
+      "days": "-499 days",
+      "hours": "-10 hours",
+      "minutes": "-28 minutes",
+      "seconds": "-28 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-005",
+    "input": {
+      "tcday1": "500",
+      "tchour1": "12",
+      "tcminute1": "30",
+      "tcsecond1": "30",
+      "tcday2": "1000",
+      "tchour2": "23",
+      "tcminute2": "59",
+      "tcsecond2": "59"
+    },
+    "expected_output": {
+      "days": "-500 days",
+      "hours": "-11 hours",
+      "minutes": "-29 minutes",
+      "seconds": "-29 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-006",
+    "input": {
+      "tcday1": "0",
+      "tchour1": "0",
+      "tcminute1": "0",
+      "tcsecond1": "0",
+      "tcday2": "500",
+      "tchour2": "12",
+      "tcminute2": "30",
+      "tcsecond2": "30"
+    },
+    "expected_output": {
+      "days": "-500 days",
+      "hours": "-12 hours",
+      "minutes": "-30 minutes",
+      "seconds": "-30 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-007",
+    "input": {
+      "tcday1": "1",
+      "tchour1": "1",
+      "tcminute1": "1",
+      "tcsecond1": "1",
+      "tcday2": "500",
+      "tchour2": "12",
+      "tcminute2": "30",
+      "tcsecond2": "30"
+    },
+    "expected_output": {
+      "days": "-499 days",
+      "hours": "-11 hours",
+      "minutes": "-29 minutes",
+      "seconds": "-29 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-008",
+    "input": {
+      "tcday1": "999",
+      "tchour1": "22",
+      "tcminute1": "58",
+      "tcsecond1": "58",
+      "tcday2": "500",
+      "tchour2": "12",
+      "tcminute2": "30",
+      "tcsecond2": "30"
+    },
+    "expected_output": {
+      "days": "499 days",
+      "hours": "10 hours",
+      "minutes": "28 minutes",
+      "seconds": "28 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-009",
+    "input": {
+      "tcday1": "1000",
+      "tchour1": "23",
+      "tcminute1": "59",
+      "tcsecond1": "59",
+      "tcday2": "500",
+      "tchour2": "12",
+      "tcminute2": "30",
+      "tcsecond2": "30"
+    },
+    "expected_output": {
+      "days": "500 days",
+      "hours": "11 hours",
+      "minutes": "29 minutes",
+      "seconds": "29 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-010",
+    "input": {
+      "tcday1": "0",
+      "tchour1": "0",
+      "tcminute1": "0",
+      "tcsecond1": "0",
+      "tcday2": "0",
+      "tchour2": "0",
+      "tcminute2": "0",
+      "tcsecond2": "0"
+    },
+    "expected_output": {
+      "days": "0 days",
+      "hours": "0 hours",
+      "minutes": "0 minutes",
+      "seconds": "0 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-011",
+    "input": {
+      "tcday1": "1",
+      "tchour1": "1",
+      "tcminute1": "1",
+      "tcsecond1": "1",
+      "tcday2": "0",
+      "tchour2": "0",
+      "tcminute2": "0",
+      "tcsecond2": "0"
+    },
+    "expected_output": {
+      "days": "1 days",
+      "hours": "1 hours",
+      "minutes": "1 minutes",
+      "seconds": "1 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-012",
+    "input": {
+      "tcday1": "0",
+      "tchour1": "0",
+      "tcminute1": "0",
+      "tcsecond1": "0",
+      "tcday2": "1",
+      "tchour2": "1",
+      "tcminute2": "1",
+      "tcsecond2": "1"
+    },
+    "expected_output": {
+      "days": "-1 days",
+      "hours": "-1 hours",
+      "minutes": "-1 minutes",
+      "seconds": "-1 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-013",
+    "input": {
+      "tcday1": "1",
+      "tchour1": "1",
+      "tcminute1": "1",
+      "tcsecond1": "1",
+      "tcday2": "1",
+      "tchour2": "1",
+      "tcminute2": "1",
+      "tcsecond2": "1"
+    },
+    "expected_output": {
+      "days": "0 days",
+      "hours": "0 hours",
+      "minutes": "0 minutes",
+      "seconds": "0 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-014",
+    "input": {
+      "tcday1": "1000",
+      "tchour1": "23",
+      "tcminute1": "59",
+      "tcsecond1": "59",
+      "tcday2": "1000",
+      "tchour2": "23",
+      "tcminute2": "59",
+      "tcsecond2": "59"
+    },
+    "expected_output": {
+      "days": "0 days",
+      "hours": "0 hours",
+      "minutes": "0 minutes",
+      "seconds": "0 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-015",
+    "input": {
+      "tcday1": "999",
+      "tchour1": "22",
+      "tcminute1": "58",
+      "tcsecond1": "58",
+      "tcday2": "1000",
+      "tchour2": "23",
+      "tcminute2": "59",
+      "tcsecond2": "59"
+    },
+    "expected_output": {
+      "days": "-1 days",
+      "hours": "-1 hours",
+      "minutes": "-1 minutes",
+      "seconds": "-1 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-016",
+    "input": {
+      "tcday1": "1000",
+      "tchour1": "23",
+      "tcminute1": "59",
+      "tcsecond1": "59",
+      "tcday2": "999",
+      "tchour2": "22",
+      "tcminute2": "58",
+      "tcsecond2": "58"
+    },
+    "expected_output": {
+      "days": "1 days",
+      "hours": "1 hours",
+      "minutes": "1 minutes",
+      "seconds": "1 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-017",
+    "input": {
+      "tcday1": "999",
+      "tchour1": "22",
+      "tcminute1": "58",
+      "tcsecond1": "58",
+      "tcday2": "999",
+      "tchour2": "22",
+      "tcminute2": "58",
+      "tcsecond2": "58"
+    },
+    "expected_output": {
+      "days": "0 days",
+      "hours": "0 hours",
+      "minutes": "0 minutes",
+      "seconds": "0 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-018",
+    "input": {
+      "tcday1": "0",
+      "tchour1": "0",
+      "tcminute1": "0",
+      "tcsecond1": "0",
+      "tcday2": "1000",
+      "tchour2": "23",
+      "tcminute2": "59",
+      "tcsecond2": "59"
+    },
+    "expected_output": {
+      "days": "-1000 days",
+      "hours": "-23 hours",
+      "minutes": "-59 minutes",
+      "seconds": "-59 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-019",
+    "input": {
+      "tcday1": "1",
+      "tchour1": "1",
+      "tcminute1": "1",
+      "tcsecond1": "1",
+      "tcday2": "1000",
+      "tchour2": "23",
+      "tcminute2": "59",
+      "tcsecond2": "59"
+    },
+    "expected_output": {
+      "days": "-999 days",
+      "hours": "-22 hours",
+      "minutes": "-58 minutes",
+      "seconds": "-58 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-020",
+    "input": {
+      "tcday1": "0",
+      "tchour1": "0",
+      "tcminute1": "0",
+      "tcsecond1": "0",
+      "tcday2": "999",
+      "tchour2": "22",
+      "tcminute2": "58",
+      "tcsecond2": "58"
+    },
+    "expected_output": {
+      "days": "-999 days",
+      "hours": "-22 hours",
+      "minutes": "-58 minutes",
+      "seconds": "-58 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-021",
+    "input": {
+      "tcday1": "1",
+      "tchour1": "1",
+      "tcminute1": "1",
+      "tcsecond1": "1",
+      "tcday2": "999",
+      "tchour2": "22",
+      "tcminute2": "58",
+      "tcsecond2": "58"
+    },
+    "expected_output": {
+      "days": "-998 days",
+      "hours": "-21 hours",
+      "minutes": "-57 minutes",
+      "seconds": "-57 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-022",
+    "input": {
+      "tcday1": "1000",
+      "tchour1": "23",
+      "tcminute1": "59",
+      "tcsecond1": "59",
+      "tcday2": "0",
+      "tchour2": "0",
+      "tcminute2": "0",
+      "tcsecond2": "0"
+    },
+    "expected_output": {
+      "days": "1000 days",
+      "hours": "23 hours",
+      "minutes": "59 minutes",
+      "seconds": "59 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-023",
+    "input": {
+      "tcday1": "999",
+      "tchour1": "22",
+      "tcminute1": "58",
+      "tcsecond1": "58",
+      "tcday2": "0",
+      "tchour2": "0",
+      "tcminute2": "0",
+      "tcsecond2": "0"
+    },
+    "expected_output": {
+      "days": "999 days",
+      "hours": "22 hours",
+      "minutes": "58 minutes",
+      "seconds": "58 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-024",
+    "input": {
+      "tcday1": "1000",
+      "tchour1": "23",
+      "tcminute1": "59",
+      "tcsecond1": "59",
+      "tcday2": "1",
+      "tchour2": "1",
+      "tcminute2": "1",
+      "tcsecond2": "1"
+    },
+    "expected_output": {
+      "days": "999 days",
+      "hours": "22 hours",
+      "minutes": "58 minutes",
+      "seconds": "58 seconds"
+    }
+  },
+  {
+    "test_name": "TIME-DIFF-025",
+    "input": {
+      "tcday1": "999",
+      "tchour1": "22",
+      "tcminute1": "58",
+      "tcsecond1": "58",
+      "tcday2": "1",
+      "tchour2": "1",
+      "tcminute2": "1",
+      "tcsecond2": "1"
+    },
+    "expected_output": {
+      "days": "998 days",
+      "hours": "21 hours",
+      "minutes": "57 minutes",
+      "seconds": "57 seconds"
+    }
+  }
+]
